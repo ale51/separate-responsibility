@@ -1,2 +1,5 @@
-vendor
-test.log
+1.initial/test.log
+2.anonymous-function/test.log
+3.interface/test.log
+4.inheritance/test.log
+
