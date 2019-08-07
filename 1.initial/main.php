@@ -1,8 +1,10 @@
 <?php
-require_once "vendor/autoload.php";
+//require_once "vendor/autoload.php";
 
 $sleepInterval = 1;
 $filePath = "./test.log";
+
+//    anonymous-function
 
 $fp = fopen($filePath, 'r');
 
