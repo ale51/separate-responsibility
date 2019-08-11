@@ -31,7 +31,7 @@ Log files need to be made in advance to run this applications.
 
 ```
 
-## 2. change directory
+## 2. Change directory
 
 ```
 $ cd 1.initial
@@ -55,13 +55,13 @@ or
 $ cd 4.inheritance is ok.
 ```
 
-## 3. run application.
+## 3. Run application.
 
 ```
 $ php main.php
 ```
 
-## 4. add a text to log file.
+## 4. Add a text to log file.
 
 ```
 $ echo Hello, World >> test.log
