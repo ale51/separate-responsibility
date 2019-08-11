@@ -46,13 +46,13 @@ $ cd 2.anonymous-function
 or 
 
 ```
-$ cd 3.interface
+$ cd 3.inheritance
 ```
 
 or
 
 ```
-$ cd 4.inheritance is ok.
+$ cd 4.interface
 ```
 
 ## 3. Run application.
