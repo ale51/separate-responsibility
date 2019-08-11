@@ -1,8 +1,8 @@
 <?php
 
-require_once "lib/SlackTail.php";
+require_once "lib/ChatTail.php";
 
 $filePath = "./test.log";
-$tail = new SlackTail($filePath);
+$tail = new ChatTail($filePath);
 
 $tail->run();
