@@ -1,30 +1,68 @@
-## 起動方法
+# How to run
 
-## autoloadファイル作成
+## 1. Make log files
+
+Log files need to be made in advance to run this applications.
+
 ```
-$ composer install
+.
+├── 1.initial
+│   ├── main.php
+│   └── test.log
+├── 2.anonymous-function
+│   ├── lib
+│   │   └── Tail.php
+│   ├── main.php
+│   └── test.log
+├── 3.interface
+│   ├── lib
+│   │   ├── RecordHandler.php
+│   │   ├── SlackRecordHandler.php
+│   │   └── Tail.php
+│   ├── main.php
+│   └── test.log
+├── 4.inheritance
+│   ├── lib
+│   │   ├── SlackTail.php
+│   │   └── Tail.php
+│   ├── main.php
+│   └── test.log
+└── README.md
+
 ```
-または、
+
+## 2. change directory
+
 ```
-$ php composer.phar install
+$ cd 1.initial
 ```
 
-## ログファイル作成
+or
 
-main.phpファイルの内部でtest.logファイルを読み込むため、main.phpの同階層にtest.logが存在しないと、
-エラーが発生します。
+```
+$ cd 2.anonymous-function 
+```
 
-各自でtest.logを作成して起動させる必要があります。
+or 
 
-## 実行
-```$ php main.php```
+```
+$ cd 3.interface
+```
 
-別のターミナルで
-```$echo ERROR 1234567890 >> test.log```を実行すると、標準出力にERROR 1234567890と表示されます。
+or
 
-## 課題
-ただ、現状のコードだと、拡張性と再利用性に問題があるので、どうにかしたい。
-今後、ERRORが発生した場合は、Slackに通知したり、FATALエラーの場合はパトランプを起動させたりするかもしれない。
-例えば、main01.phpではERRORを検知して、Slack通知、main02.phpではFATALエラーでパトランプ的な
+```
+$ cd 4.inheritance is ok.
+```
 
-通知という観点で、拡張性と再利用性に優れたコードにリファクタリングしたいがどのようなコードにすればよいか。
+## 3. run application.
+
+```
+$ php main.php
+```
+
+## 4. add a text to log file.
+
+```
+$ echo Hello, World >> test.log
+```
