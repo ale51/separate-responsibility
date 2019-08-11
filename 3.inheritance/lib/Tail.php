@@ -41,7 +41,8 @@ class Tail
         } while (true);
     }
 
-    protected function recordHandler(string $record){
+    protected function recordHandler(string $record): void
+    {
         // do nothing in default
     }
 
