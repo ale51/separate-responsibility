@@ -6,6 +6,6 @@ require_once "lib/ChatRecordHandler.php";
 $filePath = "./test.log";
 $tail = new Tail($filePath);
 
-$slack = new ChatRecordHandler();
+$chat = new ChatRecordHandler();
 
-$tail->run($slack);
+$tail->run($chat);

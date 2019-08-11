@@ -3,6 +3,6 @@
 require_once "lib/ChatTail.php";
 
 $filePath = "./test.log";
-$tail = new ChatTail($filePath);
+$chatTail = new ChatTail($filePath);
 
-$tail->run();
+$chatTail->run();
