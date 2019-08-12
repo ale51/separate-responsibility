@@ -31,7 +31,7 @@ class Tail
 
                 $record = fread($fp, $nextPosition - $position);
 
-                $recordHandler->run($record);
+                $recordHandler->handle($record);
             }
 
             $position = $nextPosition;

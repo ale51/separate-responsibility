@@ -1,5 +1,5 @@
 <?php
 
 interface RecordHandler{
-    function run(string $record): void;
+    function handle(string $record): void;
 }
