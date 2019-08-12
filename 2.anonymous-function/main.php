@@ -5,8 +5,8 @@ require_once "lib/Tail.php";
 $filePath = "./test.log";
 $tail = new Tail($filePath);
 
-$func = function($r){
-    echo $r;
+$func = function($record){
+    echo $record;
 };
 
 $tail->run($func);
